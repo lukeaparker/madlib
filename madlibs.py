@@ -1,9 +1,21 @@
+from random import shuffle 
+
 name = input('Hello! What is your name?')
 print("hello " + name + "we're going to play a little game")
 
-noun = list()
-print("input nouns")
+nouns = list()
+ajectives = list()
+verbs = list()
 
-for i in range(4):
+print("type four nouns")
+
+for nouns in range(4):
     noun.append(input())
-    print(noun)
+
+for ajectives in range(4):
+    noun.append(input())
+
+for ajectives in range(4):
+    noun.append(input())
+
+
