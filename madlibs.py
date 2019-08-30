@@ -1,21 +1,38 @@
 from random import shuffle 
 
-name = input('Hello! What is your name?')
-print("hello " + name + "we're going to play a little game")
-
 nouns = list()
-ajectives = list()
 verbs = list()
+adjectives = list()
+people = list()
 
-print("type four nouns")
+def pos_input(pos):
+    for _ in range(4):
+        pos.append(input())
 
-for nouns in range(4):
-    noun.append(input())
+name = input('Hello! What is your name? ')
+print("hello " + name + " we're going to create a little story!")
 
-for ajectives in range(4):
-    noun.append(input())
+print("Start by giving me a couple nouns...")
+pos_input(nouns)
+print("Now try giving me a couple verbs...")
+pos_input(verbs)
+print("Almost done! Shout out some adjectives...")
+pos_input(adjectives)
+print("Finally give me some names")
+pos_input(people)
 
-for ajectives in range(4):
-    noun.append(input())
+shuffle(nouns)
+shuffle(verbs)
+shuffle(adjectives)
+shuffle(people)
+
+print("Great! Now story time!")
+
+madlib = f"""{people[0]} was afraid to go outside because of the spiders. He went online and saw a 
+{nouns[0]} that interested him. {people[0]} decided to buy {nouns[0]}. The next day {people[0]} went outside and {verbs[0]} the spiders 
+with {nouns[0]}. {people[0]} invited {people[1]} to look at the
+{adjectives[0]} spiders. They never feared the spiders again."""
+
+print(madlib)
 
 
